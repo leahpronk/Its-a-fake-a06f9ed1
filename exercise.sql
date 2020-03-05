@@ -30,6 +30,11 @@ SHOW TABLES;
 -- alter table informatie MODIFY `bezoek_datum` int(0) NULL;
 -- describe informatie;
 
-ALTER TABLE informatie ADD id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY;
-delete from informatie
-where naam = `Teenalp`;
+-- ALTER TABLE informatie ADD id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+-- delete from informatie
+-- where naam = `Teenalp`;
+
+DELETE FROM `informatie` 
+WHERE
+    `id` = 8;
+describe informatie;
